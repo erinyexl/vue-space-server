@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>个人简历</title>
+
+	<!-- <link href='http://fonts.useso.com/css?family=Open+Sans:300,400,600&subset=latin,latin-ext' rel='stylesheet'> -->
+	<link href="css/index.css" media="screen" rel="stylesheet" type="text/css" />
+
+	<script>
+	function downLoad(){
+		var opso= new ActiveXObject("Scripting.FileSystemObject");
+		opso.OpenTextFile("D:/wamp/www/1.resume/trunk/images/bg.jpg", ForReading);
+	}
+	</script>
+
+</head>
+	
+
+<body class="cs">
+  
+<nav id="menu">
+	<ul>
+		<li id="home" class="active"><a href="#home">简历首页</a></li>
+		<li><a href="#kdo-jsme">联系方式</a></li>
+		<li><a href="#o-projektu">工作经历</a></li>
+		<li><a href="#novinky">个人技能</a></li>
+		<li><a href="#kalendar">项目展示</a></li>
+	</ul>
+</nav>
+
+<div class="wrapper">
+	<div class="bgLine one"></div>
+	<div class="bgLine two"></div>
+	<div class="bgLine three"></div>
+	<div class="bgLine four"></div>
+	<div class="bgLine five"></div>
+
+	<div class="wrap home">
+		<div class="content">
+			<div class="wrap_index">
+				<div class="head_pic"><img src="images/head_pic.png" height="" width="" alt=""></div>
+				<div class="" id="avatar"></div>
+				<div class="name">
+					<h2 class="name_text">叶晓琳<span>（Web前端开发）</span></h2>
+				</div>
+				<div class="down_btn"><a href="javascript:;" onclick="downLoad();return false;">下载我的简历</a></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrap kdo-jsme">
+		<div class="content">
+			<div class="box">
+				<ul>
+					<li>
+						<div class="icon job"></div>
+						<div class="icon_text">
+							<p>应聘职位</p>
+							<strong>web前端开发工程师</strong>
+						</div>
+					</li>
+					<li>
+						<div class="icon phone"></div>
+						<div class="icon_text">
+							<p>联系电话</p>
+							<strong>15814566631</strong>
+						</div>
+					</li>
+					<li>
+						<div class="icon email"></div>
+						<div class="icon_text">
+							<p>联系邮箱</p>
+							<strong>1114040299@qq.com</strong>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrap o-projektu">
+		<div class="content">
+			<div class="time_line">
+				<div class="main_line">
+					<div class="year y1">2011</div>
+					<div class="planet p1 hover">
+						<div class="icon">
+							<div></div>
+						</div>
+						<div class="info">
+							<p class="company">上海誉东文化传播有限公司</p>
+							<p class="post">平面设计(实习)</p>
+							<p class="post_info">根据客户需求协助设计师完成相关平面广告设计。</p>
+						</div>
+					</div>
+					<div class="year y2">2012</div>
+					<div class="planet p2 hover">
+						<div class="icon">
+							<div></div>
+						</div>
+						<div class="info flipx">
+							<p class="company flipx">广州中歌潮文化传播有限公司</p>
+							<p class="post flipx">平面设计</p>
+							<p class="post_info flipx">负责公司产品包装设计。</p>
+						</div>
+					</div>
+					<div class="year y3">2014</div>
+					<div class="planet p3 hover">
+						<div class="icon">
+							<div></div>
+						</div>
+						<div class="info">
+							<p class="company">广东省广告股份有限公司网络互动中心</p>
+							<p class="post">web前端开发</p>
+							<p class="post_info">配合广汽、格兰仕、金立、美的等品牌的线下活动宣传，完成线上专题项目。</p>
+						</div>
+					</div>
+					<div class="year y4">2015</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrap novinky">
+		<div class="content">
+			<div class="skill_box">
+				<ul class="clearfix">
+					<li>
+						<div class="circle">
+							<p class="per">80%</p>
+							<canvas id="canvas_ps"></canvas>
+						</div>
+						<div class="text">
+							<strong>PHOTOSHOP</strong>
+						</div>
+					</li>
+					<li>
+						<div class="circle">
+							<p class="per">80%</p>
+							<canvas id="canvas_js"></canvas>
+						</div>
+						<div class="text">
+							<strong>JAVASCRIPT</strong>
+						</div>
+					</li>
+					<li>
+						<div class="circle">
+							<p class="per">70%</p>
+							<canvas id="canvas_html"></canvas>
+						</div>
+						<div class="text">
+							<strong>HTML5</strong>
+						</div>
+					</li>
+					<li>
+						<div class="circle">
+							<p class="per">75%</p>
+							<canvas id="canvas_css"></canvas>
+						</div>
+						<div class="text">
+							<strong>CSS3</strong>
+						</div>
+					</li>
+					<li>
+						<div class="circle">
+							<p class="per">90%</p>
+							<canvas id="canvas_jq"></canvas>
+						</div>
+						<div class="text">
+							<strong>JQUERY</strong>
+						</div>
+					</li>
+					<li>
+						<div class="circle">
+							<p class="per">75%</p>
+							<canvas id="canvas_sea"></canvas>
+						</div>
+						<div class="text">
+							<strong>SEAJS</strong>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="wrap kalendar">
+		<div class="content">
+			<ul class="show_box clearfix">
+				<li>
+					<a href="javascript:;" class="code">
+						<div class="hide"><img src="images/hide1.jpg" height="205" width="205" alt=""></div>
+						<div class="show_pic"><img src="images/show1.jpg" height="260" width="430" alt="" /></div>
+					</a>
+				</li>
+				<li>
+					<a href="http://trumpchi.gacmotor.com/gs5super_2.0L/">
+						<div class="show_pic">
+							<img src="images/show2.jpg" height="260" width="430" alt="" />
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:;" class="code">
+						<div class="hide"><img src="images/hide3.jpg" height="205" width="205" alt=""></div>
+						<div class="show_pic"><img src="images/show3.jpg" height="260" width="430" alt="" /></div>
+					</a>
+				</li>
+				<li>
+					<a href="http://www.zy.com/zhuanti/2015sq/index.html">
+						<div class="show_pic">
+							<img src="images/show4.jpg" height="260" width="430" alt="" />
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="overlay"></div>
+
+
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.js"></script>
+<script type="text/javascript" src="js/prefixfree.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollpath.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>
+
