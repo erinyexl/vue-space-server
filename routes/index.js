@@ -4,11 +4,11 @@ var server = require('./server');
 var API_CONFIG = require('./api-config');
 
 /* GET home page. */
-router.get('/', function (req, res, next) {
+router.get('/', function (req,res,next) {
     res.render('index', {title: 'Express index page'});
 });
 
-router.get('/authorize',function (req, res, next) {
+router.get('/authorize',function (req,res,next) {
     //重定向到认证接口,并配置参数
     //注意这里使用的是node的https模块发起的请求
     var path = "https://api.weibo.com/oauth2/authorize";

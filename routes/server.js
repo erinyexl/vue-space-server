@@ -13,12 +13,16 @@ exports.httpsGet = function (request, path, success) {
     }
 
     var req = https.request(options, function (res) {
+        var _chunk = '';
         console.log('Status:',res.statusCode);
         // console.log('headers:',JSON.stringify(res.headers));
         res.setEncoding('utf-8');
         res.on('data',function(chunk){
-            success(chunk);
+            _chunk += chunk;
         });
+        res.on('end',function () {
+            success(_chunk);
+        })
     })
     req.on('error',function(err){
         console.error('err:',err);
@@ -41,12 +45,16 @@ exports.httpsPost = function (request, path, success) {
         }
     };
     var req = https.request(options, function(res) {
+        var _chunk = '';
         console.log('Status:',res.statusCode);
         console.log('headers:',JSON.stringify(res.headers));
         res.setEncoding('utf-8');
         res.on('data',function(chunk){
-            success(chunk);
+            _chunk += chunk;
         });
+        res.on('end',function () {
+            success(_chunk);
+        })
     });
     req.on('error',function(err){
         console.error(err);
